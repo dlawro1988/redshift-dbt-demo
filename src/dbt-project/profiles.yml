@@ -1,12 +1,12 @@
 default:
   outputs:
-    default:
-      type: redshift
-      threads: 1
-      host: <placeholder>
-      port: 5439
-      user: <placeholder>
-      pass: <placeholder>
+    dev:
       dbname: dev
-      schema: <placeholder>
-      sslmode: require
+      host: redshiftcluster-yqg3f7wh5cn2.ckkbrfwpeewq.eu-west-2.redshift.amazonaws.com
+      password: o3h5ooFwP9ykoNwe
+      port: 5439
+      schema: public
+      threads: 4
+      type: redshift
+      user: awsuser
+  target: dev
