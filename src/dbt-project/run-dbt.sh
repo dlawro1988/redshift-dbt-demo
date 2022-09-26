@@ -6,4 +6,5 @@ echo "jobQueue: $AWS_BATCH_JQ_NAME"
 echo "computeEnvironment: $AWS_BATCH_CE_NAME"
 
 echo "No models were specified. Executing all models"
+dbt deps
 dbt run --profiles-dir .
